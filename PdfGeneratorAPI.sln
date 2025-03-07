@@ -3,7 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfGeneratorAPI", "PdfGeneratorAPI\PdfGeneratorAPI.csproj", "{FEF1E6B7-6118-460E-8AFF-B0FA321AFB33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfGeneratorAPI", "PdfGeneratorAPI\PdfGeneratorAPI.csproj", "{FEF1E6B7-6118-460E-8AFF-B0FA321AFB33}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA5D463B-85BA-4315-B82D-FCFC198D4819} = {EA5D463B-85BA-4315-B82D-FCFC198D4819}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfGeneratorAPI.BLL", "BLL\PdfGeneratorAPI.BLL.csproj", "{EA5D463B-85BA-4315-B82D-FCFC198D4819}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FEF55865-E2EE-4504-AB7A-B4B5AA3F328B} = {FEF55865-E2EE-4504-AB7A-B4B5AA3F328B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfGeneratorAPI.Repository", "Repository\PdfGeneratorAPI.Repository.csproj", "{FEF55865-E2EE-4504-AB7A-B4B5AA3F328B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5FF6EBDC-A825-4A8D-B173-D0CE6DAF1A63} = {5FF6EBDC-A825-4A8D-B173-D0CE6DAF1A63}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfGeneratorAPI.Domain", "Domain\PdfGeneratorAPI.Domain.csproj", "{5FF6EBDC-A825-4A8D-B173-D0CE6DAF1A63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +30,18 @@ Global
 		{FEF1E6B7-6118-460E-8AFF-B0FA321AFB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEF1E6B7-6118-460E-8AFF-B0FA321AFB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEF1E6B7-6118-460E-8AFF-B0FA321AFB33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5D463B-85BA-4315-B82D-FCFC198D4819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5D463B-85BA-4315-B82D-FCFC198D4819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5D463B-85BA-4315-B82D-FCFC198D4819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5D463B-85BA-4315-B82D-FCFC198D4819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF55865-E2EE-4504-AB7A-B4B5AA3F328B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF55865-E2EE-4504-AB7A-B4B5AA3F328B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF55865-E2EE-4504-AB7A-B4B5AA3F328B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF55865-E2EE-4504-AB7A-B4B5AA3F328B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF6EBDC-A825-4A8D-B173-D0CE6DAF1A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF6EBDC-A825-4A8D-B173-D0CE6DAF1A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF6EBDC-A825-4A8D-B173-D0CE6DAF1A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF6EBDC-A825-4A8D-B173-D0CE6DAF1A63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,17 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
+    <PackageReference Include="FreeSpire.Doc" Version="12.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BLL\PdfGeneratorAPI.BLL.csproj" />
     <ProjectReference Include="..\Repository\PdfGeneratorAPI.Repository.csproj" />
   </ItemGroup>
 
